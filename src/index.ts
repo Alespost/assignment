@@ -5,6 +5,8 @@ import { process } from './processor';
 import { validate } from './validator';
 import { saveToJSON } from './fs';
 
+const OUTPUT_FILE = 'processed.json';
+
 const rl = readline.createInterface({
   input: stdin,
   output: stdout
@@ -17,7 +19,7 @@ rl.question('Input alphanumeric string:', (input: string) => {
   const output = process(input);
   const executionTime = performance.now() - startTime;
 
-  saveToJSON({ input, output, executionTime });
+  saveToJSON(OUTPUT_FILE, { input, output, executionTime });
 
   console.log(`Processed string is: ${output}`);
 
