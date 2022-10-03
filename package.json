@@ -8,7 +8,7 @@
     "run": "node dist/index.js",
     "test": "mocha -r ts-node/register test/**/*.ts --reporter mochawesome",
     "lint": "eslint .",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist mochawesome-report"
   },
   "author": "",
   "license": "ISC",
