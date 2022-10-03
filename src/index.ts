@@ -1,4 +1,4 @@
-import readline from 'readline';
+import * as readline from 'readline';
 import { stdin, stdout } from 'process';
 import { performance } from 'perf_hooks';
 import { process } from './processor';
