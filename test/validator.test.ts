@@ -1,5 +1,5 @@
 import assert from 'assert';
-import { ValidationError } from '../src/error/validation.error';
+import { ValidationError } from '../src/errors/validation.error';
 import { validate } from '../src/validator';
 
 describe('validator.ts', () => {

@@ -1,4 +1,4 @@
-import { ValidationError } from './error/validation.error';
+import { ValidationError } from './errors/validation.error';
 
 export function validate(input: string) {
   const regex = new RegExp('^[a-z0-9]+$', 'i');
