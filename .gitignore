@@ -132,3 +132,5 @@ dist
 
 # mochawesome report
 mochawesome-report/
+
+processed.json
